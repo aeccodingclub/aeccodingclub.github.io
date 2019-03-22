@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300i,400,600|Poppins');
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background: #242121;
+}
+
+:root{
+    --primary: #2892D7;
+    --secondary: #FFFCF2;
+}
+
+.logo p{
+    font-family: 'Raleway';
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+header{
+    background: var(--primary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    transition: top 0.8s;
+}
+
+nav{
+    position: absolute;
+    text-align: left;
+    top:100%;
+    background: var(--primary);
+    width: 100%;
+    left: 0;
+    /* display: none; */
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 0.4s ease-in-out;
+}
+
+nav a {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+nav a:hover{
+    color: rgba(255,255,255,0.5);
+}
+
+.nav-toggle:checked ~ nav{
+    display: block;
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity .25s ease-in-out .25s;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    margin-left:1em;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::after,
+.nav-toggle-label span::before{
+    display: block;
+    height: 4px;
+    width: 2em;
+    border-radius: 2px;
+    background: black;
+}
+
+.nav-toggle-label span::after,
+.nav-toggle-label span::before{
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 32px;
+}
+
+.nav-toggle-label span::after{
+    top: 32px;
+}
+
+.first{
+    margin-top: 90px;
+    color: #173753;
+    background-color: #fff;
+}
+
+.main-text{
+    padding: 2em;
+}
+
+.main-image{
+    padding: 1em;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+.main-button{
+    background-color: #173753;
+    color: #2892D7;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    width: 100px;
+    text-align: center;
+    border: 1.5px solid #2892D7;
+}
+
+.main-button:hover{
+    background-color: #fff;
+    border: 1.5px solid #2892D7;
+    color: #2892D7;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Raleway';
+    color: #FFFCF2;
+    margin-bottom: 0;
+}
+
+.sec-text{
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: #FFFCF2;
+    font-style: italic;
+}
+
+.blog-post{
+    width: 1000px;
+    margin: 2rem;
+    background: #FFFCF2;
+    border-radius: 6px;
+    padding: 2rem;
+    padding-bottom: .7rem;
+}
+
+.post-title{
+    margin-left: 2rem;
+    font-family: 'Raleway';
+    font-size: 2rem;
+}
+
+.wide{
+    display: flex;
+    flex-direction: row;
+}
+
+.graphic img{
+    width: 250px;
+    margin: 2rem;
+    border: 5px solid #173753;
+    border-radius: 6px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    align-self: flex-start;
+}
+
+.post-button{
+    background-color: #173753;
+    color: #2892D7;
+    text-decoration: none;
+    padding: .8rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: 1.5px solid #2892D7;
+}
+
+.post-button:hover{
+    background-color: #fff;
+    border: 1.5px solid #2892D7;
+    color: #2892D7;
+}
+
+@media screen and (min-width:800px){
+    .nav-toggle-label{
+        display: none;
+    }
+    
+    header{
+        display: grid;
+        grid-template-columns: auto 5fr 1fr; 
+    }
+
+    .logo{
+        margin-left: 15px;
+        grid-column: 1/2;
+    }
+
+    nav{
+        all:unset;
+
+        display: flex;
+        align-items: center;
+        grid-column: 2/3;
+    }
+
+    nav a{
+        opacity: 1;
+        margin-bottom: 0;
+        margin-left: 3em;
+        position: relative;
+    }
+
+    nav a::before{
+        position: absolute;
+        top: -.5em;
+        left: 0;
+        right: 0;
+
+
+        content:'';
+        display: block;
+        height: 5px;
+        background: #000;
+        transform: scale(0,1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before{
+        transform: scale(1,1);
+    }
+
+    .first{
+        height: 100vh;
+        margin: 0;
+    }
+
+    .first{
+        display: grid;
+        grid-template-columns: 120px minmax(300px,600px) auto 600px 120px; 
+    }
+    
+    .main-text{
+        grid-column: 2/3;
+        align-self: center;
+    }
+
+    .main-image{
+        grid-column: 4/5;
+        align-self: center;
+    }
+
+    .main-text h3{
+        font-size:2rem;
+    }
+
+    .main-text p{
+        font-size:1.1rem;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-image{
+        order: -1;
+    }
+
+    .main-text{
+        padding-top: 0;
+    }
+
+    .main-text h3{margin-top:0}
+
+    .wide{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .graphic img{
+        width: 150px;
+        margin: 2rem;
+        border: 5px solid #173753;
+        border-radius: 6px;
+    }
+
+    .blog-post{
+        width: auto;
+        margin: 1rem;
+        background: #FFFCF2;
+        border-radius: 6px;
+        padding: 1rem;
+    }
+
+    .post-title{
+        margin: 1rem;
+        font-family: 'Raleway';
+        font-size: 1.3rem;
+    }
+
+    .graphic img{
+        display: block;
+        margin: 1rem auto;
+        width: 150px;
+        border: 5px solid #173753;
+        border-radius: 6px;
+    }
+
+    .buttons{
+        align-self: center;
+    }
+
+    .text{
+        font-size: .9rem;
+        text-align: center;
+        padding: .8rem;
+    }
+
+    .sec-text{
+        text-align: center;
+        padding: .8rem;
+    }
+}
