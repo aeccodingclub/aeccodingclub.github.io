@@ -136,12 +136,15 @@
     text-align: center;
     display: grid;
     justify-items: center;
+    color: #fff;
 }
 
 
 .team-name{
     font-size: 3rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 1rem;
 }
 
 .team-desc{
@@ -150,7 +153,10 @@
 
 .team-desc > div:first-child{
     font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
 }
 
 .team-desc > div:last-child{
@@ -178,4 +184,183 @@
 
 .member-desc{
     padding: 1rem;
+}
+
+.team-name:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    margin: 0 auto;
+    height: 3px;
+    background: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 800px){
+    /* Home Page */
+    /* --------------------- */
+
+    .club-img{
+        width: 250px;
+    }
+
+    .section-container{
+        width: 100vw;
+        margin:0;
+    }
+
+    .club-title{
+        font-size: 1.8rem;
+        padding: .6rem;
+    }
+
+    .club-desc{
+        font-size: .9rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    /* Club Activities Page */
+    /* ----------------------- */
+
+    .slide-container{
+        display: block;
+        margin: 1rem;
+    }
+
+    .slide-text{
+        padding: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .slide-img > img{
+        display: block;
+        width: 250px;
+        padding: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slide-title{
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .slide-desc{
+        text-align: center;
+        font-size: .95rem;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 10px;
+        border-width: 14.4px 12.75px 14.4px 0;
+    }
+
+    .fp-controlArrow.fp-next {
+        right: 10px;
+        border-width: 14.4px 0 14.4px 12.75px;
+    }
+
+    #fp-nav.fp-right {
+        right: 0px;
+    }
+
+    #fp-nav {
+        margin-top: 5px !important;
+    }
+
+    /* Project Page */
+    /* ---------------- */
+
+    .project-container{
+        display: block;
+        margin: 1rem;
+    }
+
+    .project-text{
+        padding: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .project-img > img{
+        display: block;
+        width: 250px;
+        padding: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-title{
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .project-desc{
+        text-align: center;
+        font-size: .95rem;
+    }
+
+    /* Team Page */
+    /* --------------- */
+    .team-container{
+        display: grid;
+        justify-items: center;
+    }
+
+    .team-name{
+        font-size: 2rem;
+        margin-bottom: .7rem;
+        padding-bottom: .7rem;
+    }
+
+    .team-desc > div:first-child{
+        font-size: 1rem;
+    }
+
+    .team-desc > div:last-child{
+        font-size: 1rem;
+        padding: .2rem;
+    }
+
+    .team-title{
+        margin: 2rem;
+        margin-top:4rem;
+    }
+
+    .team-box{
+        width: auto;
+        grid-template-columns: repeat(auto-fit, 190px);
+    }
+
+    .member-img > img{
+        width: 130px;
+        border-radius: 50%;
+        border: 3px solid #fc6c7c;
+    }
+
+    .member-desc{
+        padding: 1rem;
+        color: #000;
+        font-size: .8rem;
+    }
+
+    .team-member{
+        margin-bottom: 1.5rem;
+        padding: .9rem;
+        background-color: #f2f2f2;
+        border-radius: 6px;
+    }
+
+    .fp-tooltip{
+        display: none !important;
+    }
+
 }
