@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.club-img{
+    width: 400px;
+}
+
+.section-container{
+    width: 640px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.club-title{
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.club-desc{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.club-link > div{
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-top: 1rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.club-link> div:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    margin: 0 auto;
+    height: 3px;
+    background: rgb(228, 13, 13);}
+
+.club-link > p > a > img{
+    margin-right:.5rem;
+    margin-left:.5rem;
+}
+
+.club-link > p > a > :first-child{
+    width: 39px;
+}
+
+.club-link > p > a > :last-child{
+    width: 40px;
+}
