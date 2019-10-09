@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+/* Home Page */
+/* --------------------- */
+
 .club-img{
     width: 400px;
 }
@@ -40,7 +43,8 @@
     width: 50px;
     margin: 0 auto;
     height: 3px;
-    background: rgb(228, 13, 13);}
+    background: rgb(228, 13, 13);
+}
 
 .club-link > p > a > img{
     margin-right:.5rem;
@@ -53,4 +57,125 @@
 
 .club-link > p > a > :last-child{
     width: 40px;
+}
+
+/* Club Activities Page */
+/* ----------------------- */
+
+.slide-container{
+    display: grid;
+    grid-template-columns: auto 700px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 5rem;
+    justify-items: center;
+}
+
+.slide-text{
+    padding: 1rem;
+}
+
+.slide-img > img{
+    width: 600px;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 7px;
+}
+
+.slide-title{
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.slide-desc{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Project Page */
+/* ---------------- */
+
+.project-container{
+    display: grid;
+    grid-template-columns: auto 700px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin: 5rem;
+    justify-items: center;
+}
+
+.project-text{
+    padding: 1rem;
+}
+
+.project-img > img{
+    width: 600px;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 7px;
+}
+
+.project-title{
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.project-desc{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Team Page */
+/* --------------- */
+.team-container{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+
+.team-name{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.team-desc{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-desc > div:first-child{
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-desc > div:last-child{
+    font-size: 1.1rem;
+    padding: .2rem;
+}
+
+.team-title{
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.team-box{
+    display: grid;
+    justify-content: space-around;
+    width: 800px;
+    grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.member-img > img{
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.member-desc{
+    padding: 1rem;
 }

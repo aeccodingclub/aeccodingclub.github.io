@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>AEC Coding Club</title>
 
     <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -24,20 +24,96 @@
                     <div>JOIN US</div>
                     <p>
                         <a href="https://github.com/aeccodingclub" target="blank"><img src="assets/icons8-facebook-80.png" alt=""></a>
-                        <a href=""><img src="assets/icons8-github-96.png" alt=""></a>
+                        <a href="https://github.com/aeccodingclub"><img src="assets/icons8-github-96.png" alt=""></a>
                     </p>
                 </div>
             </div>
-            
         </div>
         <div class="section" id="section1">
-            <div class="slide "><h1>Simple Demo</h1></div>
-            <div class="slide active"><h1>Only text</h1></div>
+            <div class="slide active">
+                <div class="slide-container">
+                    <div class="slide-text">
+                        <div class="slide-title">
+                            Club Activities
+                        </div>
+                        <div class="slide-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas corporis alias recusandae, iste ratione quis fugiat possimus eveniet hic! Praesentium nihil illo odio vel aut omnis reprehenderit delectus impedit?
+                        </div>
+                    </div>
+                    <div class="slide-img">
+                        <img src="assets/ezgif.com-crop.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slide"><h1>Only text</h1></div>
             <div class="slide"><h1>And text</h1></div>
             <div class="slide"><h1>And more text</h1></div>
         </div>
-        <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-        <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+        <div class="section" id="section2">
+                <div class="slide active">
+                    <div class="project-container">
+                        <div class="project-text">
+                            <div class="project-title">
+                                Projects
+                            </div>
+                            <div class="project-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas corporis alias recusandae, iste ratione quis fugiat possimus eveniet hic! Praesentium nihil illo odio vel aut omnis reprehenderit delectus impedit?
+                            </div>
+                        </div>
+                        <div class="project-img">
+                            <img src="assets/ezgif.com-crop.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide"><h1>Only text</h1></div>
+                <div class="slide"><h1>And text</h1></div>
+                <div class="slide"><h1>And more text</h1></div>
+            </div>
+        <div class="section" id="section3">
+            <div class="team-container">
+                <div class="team-title">
+                    <div class="team-name">
+                        Our Team
+                    </div>
+                    <div class="team-desc">
+                        <div>Session: 2019-2020</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nobis.</div>
+                    </div>
+                </div>
+                <div class="team-box">
+
+                    <div class="team-member">
+                        <div class="member-img">
+                            <img src="assets/pp.jpg" alt="">
+                        </div>
+                        <div class="member-desc">
+                            <div>Lorem, ipsum.</div>
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                            <div class="member-img">
+                                <img src="assets/pp.jpg" alt="">
+                            </div>
+                            <div class="member-desc">
+                                <div>Lorem, ipsum.</div>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                    </div>
+
+                    <div class="team-member">
+                            <div class="member-img">
+                                <img src="assets/pp.jpg" alt="">
+                            </div>
+                            <div class="member-desc">
+                                <div>Lorem, ipsum.</div>
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     
@@ -45,10 +121,11 @@
     <script type="text/javascript" src="dist/fullpage.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#fff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            sectionsColor: ['#fff', '#4BBFC3', '#7BAABE', '#ccddff'],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['Home', 'Club Activities', 'Projects','Team'],
+            dragAndMove: true
         });
     </script>
 </body>
