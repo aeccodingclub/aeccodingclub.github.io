@@ -198,6 +198,17 @@
     background: rgb(0, 0, 0);
 }
 
+/* different colours on team slides */
+/* --------------------------------- */
+
+.team-slide:nth-child(2){
+    background-color: #DB8A74 !important;
+}
+
+.team-slide:nth-child(3){
+    background-color: #2892D7 !important;
+}
+
 @media screen and (max-width: 800px){
     /* Home Page */
     /* --------------------- */
