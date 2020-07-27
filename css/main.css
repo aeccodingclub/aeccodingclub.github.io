@@ -7,6 +7,28 @@
     width: 400px;
 }
 
+.ext1{
+  background-color: #63c5da; 
+  border: none;
+  color: white;
+  padding: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: candara;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition-duration: 1.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.ext1:hover {
+  background-color: #82eefd; 
+  color: #241571;
+}
+
 .section-container{
     width: 640px;
     margin-left:auto;
@@ -365,8 +387,8 @@
 
     .team-member{
         margin-bottom: 1.5rem;
-        padding: .9rem;
-        background-color: #f2f2f2;
+        padding: 6rem;
+        background-color: #424874;
         border-radius: 6px;
     }
 
