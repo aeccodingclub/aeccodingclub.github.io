@@ -9,14 +9,32 @@
     <link rel="icon" href="assets/icon2.png">
     <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/81a87a1138.js"></script>    
 </head>
 <body>
-    <div id="fullpage">
+	<div>
+    	<nav>
+    		<input type="checkbox" id="res-menu">
+    		<label for="res-menu">
+    			<i class="fa fa-bars" id="sign-one"></i>
+    			<i class="fa fa-times" id="sign-two"></i>
+    		</label>
+    		<h1>AEC Coding Club</h1>
+    		<ul>
+    			<li><a href="#">Home</a></li>
+    			<li><a href="#activities">Activities</a></li>
+    			<li><a href="#projects">Projects</a></li>
+    			<li><a href="club_teams.html">Club Teams</a></li>
+    		</ul>
+    	</nav>
+    </div>
+    <div id="fullpage">    	
 
         <!-- section 0 : home screen -->
         <!-- ----------------------- -->
         <div class="section active" id="section0">
-        	<a href="club_teams.html"><button class="ext1"><b>CLUB TEAMS</b></button></a>
+        	
             <div class="section-container">
                 <img src="assets/image1.png" class="club-img" alt="">
                 <div class="club-title">
@@ -130,5 +148,6 @@
             anchors:['home', 'activities','projects'],
         });
     </script>
+    
 </body>
 </html>

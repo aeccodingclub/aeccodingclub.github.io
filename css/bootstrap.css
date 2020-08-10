@@ -362,6 +362,11 @@ img {
   background-size: cover;
 }
 
+.bg-3{
+  background: url("../assets/waterfall.jpg") no-repeat;
+  background-size: cover;
+}
+
 .img-thumbnail {
   display: inline-block;
   height: auto;
