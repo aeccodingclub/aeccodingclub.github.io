@@ -7,6 +7,34 @@
     width: 400px;
 }
 
+h22{
+    font-size: 40px;
+}
+
+p22 img{
+    height: 20rem;
+    width: 30%;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+p22 img :hover{
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  p22 img {
+    width: 100%;
+  }
+}
+
+.actbg{
+    padding:20px;
+    margin:10px;
+    border-radius: 20px;
+    background: white;
+}
+
 .ext1{
   background-color: #63c5da; 
   border: none;
